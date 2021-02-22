@@ -16,7 +16,7 @@ This repository contains Automation scripts of CI/CD from pushing source -> crat
 -> Provision AWS ECR to store the Docker containers
 -> Provision AWS EKS cluster and configure the Node Groups
 -> Create IAM Policies for Jenkins Master to be able to Push the Container to ECR and to invoke Deployment into EKS
-
+Note: Jenkin master-Dockerslave, AWS EKS configuration files are uploaded to "Configuration files" for reference
 # instructions
 -> when ever developer pushes changes to branch, since we configured webhooks with jenkins branch specific build will trigger
 -> Jenkins will check the code test cases written in test.py
