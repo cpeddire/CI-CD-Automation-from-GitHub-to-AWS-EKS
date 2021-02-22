@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hellotest-ingress
+  namespace: test
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - http:
+        paths:
+        - path: /hellotest
+          backend:
+            serviceName: helloworld-application
+            servicePort: 80
